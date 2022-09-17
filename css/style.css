@@ -1,0 +1,546 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+input {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol, 
+li {
+    list-style: none;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+img {
+    vertical-align: top;
+}
+
+html, body {
+    height: 100%;
+    line-height: 1;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.header {
+    background-color: #002547;
+    z-index: 1;
+}
+
+.main {
+    flex: 1 1 auto;
+    margin-top: -100px;
+    background-color: #FCFCFC;
+}
+
+.container   {
+    max-width: 1138px;
+    margin: 0 auto;
+    display: flex;
+    min-height: 114px;
+    align-items: center;   
+}
+
+.container__main {
+    max-width: 1138px;
+    margin: 0 auto;
+}
+
+.header__menu {
+    flex: 1 1 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__link {
+    padding: 0 0 0 40px;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.header__button {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: end;
+}
+
+.header__btn {
+    display: flex;
+    width: 147px;
+    height: 53px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #1D92FF;
+    font-size: 18px;
+}
+
+.first__display {
+    background-color: #002547;
+    background-size: 100vw;
+    color: #fff;
+    height: 830px;
+    overflow: hidden;
+}
+
+.block-text {
+    width: 623px;
+}
+
+.block-text__title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 84px;
+}
+
+.main__txt{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+
+.blue__text {
+    color: #1D92FF;
+    letter-spacing: 0.05em;
+}
+
+.blue-text__big {
+    text-transform: uppercase;
+}
+
+.text_dec {
+    text-decoration: underline;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.btn-block {
+    display: flex;
+}
+
+.button {
+    display: flex;
+    width: 205px;
+    height: 53px;
+    font-size: 18px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-white {
+    color: #1D92FF;
+    background-color: #fff;
+    margin-right: 30px;
+}
+
+.button__blue {
+    background-color: #1D92FF;
+    border: none;
+}
+
+.description__img {
+    position: relative;
+    left: -30px;
+}
+
+.sponsors__box {
+    display: flex;
+    padding: 130px 0 140px 0;
+}
+
+.sponsors__img {
+    margin-right: 92px;
+}
+
+.less__img {
+    margin-left: -100px;
+}
+
+.selector {
+    display: flex;
+}
+
+.block-text__main {
+    position: absolute;
+    right: 43px;
+}
+
+.title {
+    font-size: 39px;
+    font-weight: 400;
+    line-height: 52.65px;
+    text-transform: capitalize;
+    padding: 10px 0 25px 0;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    text-transform: capitalize;
+    opacity: 0.7;
+}
+
+.text_l {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    opacity: 0.7;
+}
+
+.text-box{
+    width: 465px;
+    height: 206px;
+    margin-top: 45px;
+}
+
+.text-box__line{
+    display: flex;
+    align-items: center;
+    padding: 12.5px 0;
+}
+
+.line__img {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+}
+
+.second__display {
+    padding: 150px 0 0 0;
+}
+
+.spoiler__item {
+    max-width: 472px;
+    max-height: 157px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 18px 24px;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+.spoiler__title {
+    position: relative;
+    cursor: pointer;
+}
+
+.spoiler__text {
+    padding: 19px 0 0 0;
+}
+
+.spoiler__title::before,
+.spoiler__title::after {
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: #808386;
+    position: absolute;
+    top: 7.5px;
+    transition: all 0.3s ease 0s;
+}
+
+.spoiler__title::before {
+    transform: rotate(40deg);
+    left: 385px;
+}
+
+.spoiler__title::after {
+    transform: rotate(-40deg);
+    left: 392px;
+}
+
+.spoiler__title.active::before,
+.spoiler__title.active::after {
+    background-color: #1D92FF;
+}
+
+.spoiler__title.active::before{
+    transform: rotate(-40deg);
+}
+
+.spoiler__title.active::after {
+    transform: rotate(40deg);
+}
+
+.spoiler__text {
+    display: none;
+}
+
+.spoiler__link {
+    color: #1D92FF;
+    text-decoration: underline;
+}
+
+.info__buttons {
+    display: flex;
+    padding: 45px 0 0 0 ;
+}
+
+.button__other {
+    border: 1px solid #1D92FF;
+    color: #1D92FF;
+    margin-left: 25px;
+}
+
+.data__img {
+    position: absolute;
+    right: 0;
+}
+
+.elecric__saas {
+    padding: 156px 0 0 0;
+}
+
+.text__block {
+    text-align: center;
+}
+
+.big__title {
+    font-weight: 600;
+}
+
+.achievements {
+    border: 1px dashed #1D92FF;
+    border-width: 3px;
+    padding: 39px 68px;
+    margin: 60px 0 0 0;
+}
+
+.achievements__upper,
+.achievements__lower {
+    display: flex;
+    justify-content: space-between;
+}
+
+.achievements__upper {
+    margin: 0 0 59.5px 0;
+}
+
+.achievement__box {
+    width: 226px;
+    height: 209px;
+    text-align: center;
+}
+
+.achievement__title {
+    padding: 24.3px 0 15px 0;
+}
+
+.block__buy {
+    display: flex;
+    padding: 60px 0 0 0;
+}
+
+.buy__item {
+    min-width: 362px;
+    border: 1px solid rgba(29, 146, 255, 0.1);
+    padding: 0 0 29px 0;
+    border-radius: 10px;
+    max-width: 363.6px;
+    max-height: 545.45px;
+}
+
+.buy__item__black {
+    max-width: 363.6px;
+    min-height: 613px;
+    background-color: #002648;
+    color: #fff;
+}
+
+.buy-item__small {
+    margin-top: 38px;
+}
+
+.buy__title {
+    font-weight: 500;
+    font-size: 20px;
+    padding: 29px 0 0 0;
+    line-height: 30px;
+}
+
+.buy__text {
+    padding: 15px 0 19px 0;
+}
+
+.price {
+    font-weight: 500;
+    font-size: 39px;
+    line-height: 52.65px;
+    padding: 0 0 20px 0;
+}
+
+.privilege__block {
+    padding: 0 0 0 65px;
+}
+
+.privilege {
+    display: flex;
+    padding: 15px 0 15px 0;
+}
+
+.checkmark {
+    position: absolute;
+    padding: 3  px 0 0 3px;
+}
+
+.privilege__text {
+    text-align: left;
+    padding: 0 0 0 39px;
+}
+
+.buy__button {
+    margin: 0 auto;
+    margin-top: 27px;
+}
+
+.black__title {
+    font-weight: 700;
+    padding: 50px 0 15px 0;   
+}
+
+.black__price {
+    color: #fff;
+    padding: 20px 0 39px 0;
+}
+
+.black__text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+
+.black__button {
+    display: flex;
+    width: 205px;
+    height: 53px;
+    font-size: 18px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #1D92FF;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 27px;
+}
+
+.email__block {
+    margin-top: 140px;
+    background-color: #002648f7;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 52px 56px 54px;
+    border-radius: 15px;
+    z-index: 100;
+}
+
+.email__title {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 0 0 25px 0;
+}
+
+.email__text {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.email {
+    width: 460px;
+    max-height: 1px;
+    border-radius: 40px;
+    background: none;
+    border: 1.5px solid #ccc;
+    color: #fff;
+    padding: 24.68px 0 24.68px 40px;
+    font-size: 20px;
+}
+
+.email__btn {
+    position: absolute;
+    margin-left: -83px;
+    margin-top: 4.5px
+}
+
+.footer {
+    background-color: #070C11;
+    padding: 126px 227px;
+    color: #ccc;
+}
+
+.footer__inf {
+    display: flex;
+    justify-content: space-between;
+}
+
+.email__footer {
+    width: 213px;
+    height: 38px;
+    border-radius: 40px;
+    background: none;
+    border: 1.5px solid #ccc;
+    color: #fff;
+    padding: 0 0 0 13px;
+
+}
+
+.footer__block {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__text {
+    color: #ccc;
+    padding: 30px 0 0 0;
+}
+
+.footer__link {
+    color: #ccc;
+    padding: 0 0 27px 0;
+}
+
+.link__title {
+    font-weight: 500;
+    color: #fff;
+    font-size: 18px;
+}
+
